@@ -1,0 +1,6 @@
+*.exe
+*.o
+rekor.dat
+*.dev
+*.layout
+Makefile.win
