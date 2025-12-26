@@ -1,55 +1,30 @@
-*Ad-Soyad-Numara
+# Cubefall
 
-Alperen Karadana 25253053
-Alp Şahintürk 23253045
+Cubefall is an arcade-style endless survival game developed using the C programming language and the Raylib library.
 
+## 🎮 About the Game
+You control an explorer escaping from a crumbling ancient temple. Your goal is to achieve the highest score by dodging columns and stones falling from above at random speeds and positions.
 
-*Oyun Fikri;
+* **Increasing Difficulty:** The speed of falling blocks increases as the game progresses.
+* **High Score System:** The top 5 scores are recorded and saved.
+* **Physics-Based Gameplay:** Collisions between the character and blocks are calculated using custom algorithms.
 
-   Oyunumuzun adı "Blok Yağmuru". Oyunda yukarıdan rastgele sütunlara düşen
-   bloklardan kaçmaya çalışan bir kaşif bulunmaktadır. Kaşifimiz yıkılmaya yüz tutmuş tapınaktan düşen 
-   tuğlalardan ve taşlardan sıyrılarak hayatta kalmaya çalışır. 
-   Oyunun zorluğu zamanla artar, düşen taşların hızı yükselir.
-   Oyuncu bir bloğa çarptığında oyun sona erer.
+## 🛠 Technical Details
+This project was developed as a freshman Computer Engineering project and demonstrates the following technical concepts:
 
+* **Language & Library:** C, Raylib.
+* **Memory Management:** Game and player data are passed to functions via **pointers** to ensure memory efficiency.
+* **Data Persistence (File I/O):** The scoreboard is stored in **Binary** format in the `rekor.dat` file.
+* **Algorithms:** The **Bubble Sort** algorithm is utilized to sort the high scores.
 
-*Oyunun Derlenmesi ve Çalıştırılması;
+## 🚀 Installation & Execution
 
-Derleme ve çalıştırma adımları:
-- Embarcadero Dev-C++ 6.3 açılır.
-- Proje TDM-GCC 64-bit Release derleyicisi ile açılır.
-- Raylib kütüphanesi projeye eklenmiş olmalıdır.
-- "Compile & Run"(F11) butonuna basılarak oyun başlatılır.
+To compile the project on your local machine, follow these steps:
 
+1.  Clone or download this repository.
+2.  Open the `Cubefall Game.dev` file using **Embarcadero Dev-C++ 6.3**.
+3.  Ensure the compiler is set to **TDM-GCC 64-bit Release** mode.
+4.  Verify that **Raylib** library linker parameters are correctly configured in project settings.
+5.  Press **F11** to compile and run.
 
-*Zorunlu İşaretçi (Pointer) Kullanımı;
-
-- Oyuncu ve oyun verileri fonksiyonlara işaretçi ile gönderilmiştir.
-    Örnek;
-    void OyunuGuncelle(Oyun *oyun, Oyuncu *oyuncu)
-    void OyuncuFizigiGuncelle(Oyuncu *oyuncu, Oyun *oyun)
-
-- Bu sayede fonksiyonlar oyun ve oyuncu verilerini doğrudan değiştirebilmekte,
-  bellek kullanımı daha verimli hale gelmektedir.
-
-
-*Yüksek Skor Sistemi ve Dosya Formatı;
-
-- En yüksek 5 skor "rekor.dat" adlı dosyada kaydediliyor.
-- Dosya ikili (binary) formatta kaydedilmektedir.
-- En yüksek 5 skor, int dizisi halinde dosyaya yazılmaktadır.
-- Dosyada her satırda bir sayı bulunmamaktadır, veriler ikili formatta ardışık olarak saklanmaktadır.
-- Oyun açıldığında skorlar dosyadan okunur, oyun bitince gerekirse güncellenir.
-
-
-*Ekipteki Görev Paylaşımı;
-
-- Alperen Karadana:
-  * Ana oyun mekanikleri.
-  * Ses efektleri, arkaplan müziği eklenmesi.
-  * Skor ve En yüksek skor sıralanması(Bubble Sort).
-
-- Alp Şahintürk:
-  * Oyun türünün ve fikrinin belirlenmesi.
-  * Ana oyun mekanikleri.
-  * Görsel dokuların, arkaplan manzarasının eklenmesi.
+*Note: You can download the ready-to-play version from the "Releases" section.*
