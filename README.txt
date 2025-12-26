@@ -6,7 +6,7 @@ Alp Şahintürk 23253045
 
 *Oyun Fikri;
 
-   Oyunumuzun adı "Blok Yağmuru". Oyunda yukarıdan rastgele sütunlara düşen
+   Oyunumuzun adı "CubeFall". Oyunda yukarıdan rastgele sütunlara düşen
    bloklardan kaçmaya çalışan bir kaşif bulunmaktadır. Kaşifimiz yıkılmaya yüz tutmuş tapınaktan düşen 
    tuğlalardan ve taşlardan sıyrılarak hayatta kalmaya çalışır. 
    Oyunun zorluğu zamanla artar, düşen taşların hızı yükselir.
